@@ -1,15 +1,15 @@
 import React from 'react'
 
-function Header(usuario)
+function Header()
 {
     return (
-        <div class = "header">
+        <div className = "header">
 
-            <div class = "header-usuario">
+            <div className = "header-usuario">
                 <img src = "" alt = "fotoUsuario"/>
                 <div>
-                    <h4>{usuario.nombre}</h4>
-                    <p>{usuario.descripcion}</p>
+                    <h4>Gerardo Pérez</h4>
+                    <p>Paciente</p>
                 </div>
             </div>
 

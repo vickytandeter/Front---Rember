@@ -4,7 +4,7 @@ function Footer() {
 
     return (
 
-        <div class = "footer">
+        <div className = "footer">
 
             <div className="header-buttons">
                 <button url = "Home" aria-label="Home">⌂</button>

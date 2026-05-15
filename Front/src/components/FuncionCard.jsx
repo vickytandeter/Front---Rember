@@ -4,7 +4,7 @@ function FuncionCard(funcion) {
 
     return (
 
-        <div clas = "funcion">
+        <div className = "funcion">
 
             <img src = ""/>
             <div>
