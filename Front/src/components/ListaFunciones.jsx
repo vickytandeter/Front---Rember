@@ -1,5 +1,5 @@
 import React from 'react'
-import FuncionCard from 'FuncionCard'
+import FuncionCard from './FuncionCard'
 
 function Home(funciones, onSelect) {
 
@@ -10,10 +10,12 @@ function Home(funciones, onSelect) {
                         <FuncionCard
                             key={index}
                             funcion={funcion}
-                            seleccionar={() => onSelect(index)}
+                            onSelect={() => onSelect(index)}
                         />
                     ))}
                 </div>
         </div>
     )
 }
+
+export default ListaFunciones;

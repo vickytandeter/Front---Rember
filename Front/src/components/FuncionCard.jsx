@@ -1,21 +1,15 @@
 import React from 'react'
 
-function FuncionCard(funcion) {
+function FuncionCard({ funcion, onSelect }) {
 
     return (
+        <div onClick={onSelect}>
 
-        <div className = "funcion">
-
-            <img src = ""/>
-            <div>
-                <p>{funcion.nombre}</p>
-                <p>{funcion.descripcion}</p>
-            </div>
+            <h3>{funcion.titulo}</h3>
+            <p>{funcion.descripcion}</p>
 
         </div>
-
-    );
-
+    )
 }
 
 export default FuncionCard;
