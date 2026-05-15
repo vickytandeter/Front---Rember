@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Header()
+function Header(usuario)
 {
     return (
         <div class = "header">
@@ -8,8 +8,8 @@ function Header()
             <div class = "header-usuario">
                 <img src = "" alt = "fotoUsuario"/>
                 <div>
-                    <h4>Gerardo Pérez</h4>
-                    <p>Paciente</p>
+                    <h4>{usuario.nombre}</h4>
+                    <p>{usuario.descripcion}</p>
                 </div>
             </div>
 

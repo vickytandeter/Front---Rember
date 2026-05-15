@@ -1,6 +1,6 @@
 import React from 'react'
 
-function FuncionCard(nombre, descripcion) {
+function FuncionCard(funcion) {
 
     return (
 
@@ -8,8 +8,8 @@ function FuncionCard(nombre, descripcion) {
 
             <img src = ""/>
             <div>
-                <p>{Funcion.nombre}</p>
-                <p>{Funcion.descripcion}</p>
+                <p>{funcion.nombre}</p>
+                <p>{funcion.descripcion}</p>
             </div>
 
         </div>
