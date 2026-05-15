@@ -20,6 +20,18 @@ function App() {
     {
       titulo: "Tendencias y patrones",
       descripcion: "Mirá si las anomalías aumentan, bajan o se mantienen."
+    },
+    {
+      titulo: "Recomendaciones de médicos",
+      descripcion: "Orientación simple para saber con quién hablar."
+    },
+    {
+      titulo: "Alertas y recordatorios",
+      descripcion: "Recibe avisos suaves para seguir de cerca los cambios."
+    },
+    {
+      titulo: "Colaboradores",
+      descripcion: "Invita a otros a registrar señales y ver el progreso."
     }
   ]
   return (

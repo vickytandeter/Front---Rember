@@ -1,7 +1,7 @@
 import React from 'react'
 import FuncionCard from './FuncionCard'
 
-function Home(funciones, onSelect) {
+function ListaFunciones({funciones, onSelect}) {
 
     return (
         <div className = "home">
