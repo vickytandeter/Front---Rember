@@ -1,4 +1,4 @@
-footer {
+/* footer {
   position: fixed;
   bottom: 0;
   left: 50%;
@@ -61,4 +61,70 @@ footer .header-buttons button.active {
 
 footer .header-buttons button.active::after {
   color: var(--nav-active-color);
+} */
+
+
+
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 390px;
+  max-width: 100%;
+  height: var(--footer-height);
+  background: rgba(255, 255, 255, 0.80);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 32px 32px 0 0;
+  box-shadow: 0 -8px 24px 0 rgba(44, 52, 55, 0.06);
+  display: flex;
+  align-items: flex-start;
+  padding: 12px 24px 0 22px;
+  gap: 19px;
+  z-index: 100;
+}
+
+/* Cada botón del nav */
+footer .nav-btn {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  flex: 1;
+}
+
+footer .nav-btn svg {
+  display: block;
+}
+
+footer .nav-btn span {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--nav-inactive);
+  line-height: 16.5px;
+}
+
+/* Estado activo */
+footer .nav-btn.active {
+  background: #EEF2FF;
+}
+
+footer .nav-btn.active span {
+  color: #4338CA;
+}
+
+footer .nav-btn:hover:not(.active) {
+  background: rgba(79, 70, 229, 0.06);
 }

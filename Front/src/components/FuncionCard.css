@@ -27,16 +27,15 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
+/* Ícono circular */
 .funcion-card-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 14px;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
   flex-shrink: 0;
-  margin-bottom: 4px;
 }
 
 .funcion-card-icon.icon-blue   { background: var(--icon-blue-bg);   color: var(--icon-blue); }
@@ -44,6 +43,16 @@
 .funcion-card-icon.icon-purple { background: var(--icon-purple-bg); color: var(--icon-purple); }
 .funcion-card-icon.icon-red    { background: var(--icon-red-bg);    color: var(--icon-red); }
 .funcion-card-icon.icon-teal   { background: var(--icon-teal-bg);   color: var(--icon-teal); }
+.funcion-card-icon.icon-indigo { background: #EEF2FF; }
+
+/* Textos */
+.funcion-card-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 100%;
+}
+
 
 .funcion-card h3 {
   font-size: 17px;
