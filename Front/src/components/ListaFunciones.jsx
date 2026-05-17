@@ -1,5 +1,6 @@
 import React from 'react'
 import FuncionCard from './FuncionCard'
+import './ListaFunciones.css'
 
 function ListaFunciones({funciones, onSelect}) {
 

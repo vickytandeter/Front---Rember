@@ -1,0 +1,64 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 390px;
+  height: var(--footer-height);
+  background: var(--nav-bg);
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 10px;
+  z-index: 100;
+  box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.05);
+}
+
+footer .header-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .header-buttons button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 20px 6px;
+  border-radius: 14px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--nav-inactive);
+  font-size: 22px;
+  font-family: inherit;
+  transition: color 0.2s, background 0.2s;
+  position: relative;
+}
+
+footer .header-buttons button::after {
+  content: attr(aria-label);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+footer .header-buttons button:hover {
+  color: var(--purple-mid);
+}
+
+footer .header-buttons button.active {
+  color: var(--nav-active-color);
+  background: var(--nav-active-bg);
+  border-radius: 14px;
+}
+
+footer .header-buttons button.active::after {
+  color: var(--nav-active-color);
+}

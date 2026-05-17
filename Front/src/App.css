@@ -183,10 +183,21 @@
   }
 } */
 
-body {
+/* body {
   font-family: Arial, sans-serif;
 }
 
 .container {
   padding: 20px;
+} */
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  background: var(--bg);
+  overflow-x: hidden;
+  width: 100%;
 }
+ 

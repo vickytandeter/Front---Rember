@@ -1,0 +1,13 @@
+.home {
+  flex: 1;
+  padding: 20px 16px;
+  padding-bottom: calc(var(--footer-height) + 20px);
+  overflow-x: hidden;
+}
+
+.funcionCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
