@@ -1,39 +1,31 @@
-import React from 'react'
+import React from 'react';
+import { View, Text, Image, TouchableOpacity } from 'react-native';
 
-function Header()
-{
+function Header() {
     return (
-        <header>
+        <View>
+            <View>
+                <Image
+                    source={require('./img/ejemplo.png')}
+                    style={{ width: 40, height: 40 }}
+                    accessibilityLabel="fotoUsuario"
+                />
+                <View>
+                    <Text>Gerardo Pérez</Text>
+                    <Text>Paciente</Text>
+                </View>
+            </View>
 
-            <div className = "header-usuario">
-                <img src = "./img/ejemplo.png" alt = "fotoUsuario"/>
-                <div>
-                    <h4>Gerardo Pérez</h4>
-                    <p>Paciente</p>
-                </div>
-            </div>
-
-            <div className="header-buttons">
-                <button aria-label="Notificaciones">🔔</button>
-                <button aria-label="Menú" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">☰</button>
-
-                <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-                    <div className="offcanvas-header">
-                        <h5 className="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
-                        <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-
-                    <div className="offcanvas-body">
-                        Content for the offcanvas goes here.
-                    </div>
-                </div>
-            </div>
-
-        </header>
-        
-    
+            <View>
+                <TouchableOpacity accessibilityLabel="Notificaciones">
+                    <Text>🔔</Text>
+                </TouchableOpacity>
+                <TouchableOpacity accessibilityLabel="Menú">
+                    <Text>☰</Text>
+                </TouchableOpacity>
+            </View>
+        </View>
     );
 }
 
 export default Header;
-

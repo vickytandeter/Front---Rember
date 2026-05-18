@@ -1,15 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { TouchableOpacity, Text } from 'react-native';
 
 function FuncionCard({ funcion, onSelect }) {
-
     return (
-        <button onClick={onSelect}>
-
-            <h3>{funcion.titulo}</h3>
-            <p>{funcion.descripcion}</p>
-
-        </button>
-    )
+        <TouchableOpacity onPress={onSelect}>
+            <Text>{funcion.titulo}</Text>
+            <Text>{funcion.descripcion}</Text>
+        </TouchableOpacity>
+    );
 }
 
 export default FuncionCard;

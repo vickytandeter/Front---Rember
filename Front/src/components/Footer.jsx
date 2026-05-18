@@ -1,20 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { View, Text, TouchableOpacity } from 'react-native';
 
 function Footer() {
-
     return (
-
-        <footer>
-
-            <div className="header-buttons">
-                <button url = "Home" aria-label="Home">⌂</button>
-                <button url = "Funciones" aria-label="Funciones">▦</button>
-                <button url = "Settings" aria-label="Settings">⚙️</button>
-            </div>
-
-        </footer>
-
-    )
+        <View>
+            <TouchableOpacity accessibilityLabel="Home">
+                <Text>⌂</Text>
+            </TouchableOpacity>
+            <TouchableOpacity accessibilityLabel="Funciones">
+                <Text>▦</Text>
+            </TouchableOpacity>
+            <TouchableOpacity accessibilityLabel="Settings">
+                <Text>⚙️</Text>
+            </TouchableOpacity>
+        </View>
+    );
 }
 
 export default Footer;
